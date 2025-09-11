@@ -56,7 +56,6 @@ btnStart.addEventListener('click', (e) => {
     if (userSelectedDate - new Date() <= 0) {
       clearInterval(timerId);
       Object.values(timer).forEach(item => item.textContent = '00');
-      btnStart.disabled = false;
       datetimePicker.input.disabled = false;
     }
   }, 1000);
